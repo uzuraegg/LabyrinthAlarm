@@ -10,16 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
-            android:name=".MainActivity"
+            android:name=".GameActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SettingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SettingActivity"></activity>
+        <receiver android:name=".AlarmBroadcastReceiver"></receiver>
     </application>
 
 </manifest>
